@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(0, 0, 0);
+    color: rgb(251, 253, 255);
+}
+#header{
+    width: 100%;
+    height: 105vh;
+    background-image: url(images/nbg1.png);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    padding: 10px 10%;  /* Reduce horizontal padding */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 10px; /* Optional: Remove left padding */
+}
+
+.logo {
+    width: 140px; /* Adjust if needed */
+    margin-left: -50px;/* Optional: Fine-tune placement */
+}
+nav ul{
+    margin-top: -40px;
+}
+nav ul li{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+   
+   }
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f0f0f0;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 25px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+span{
+    color: #ff004f;
+}
+/*  about */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 30px
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*------------services------------------*/
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+ /*-------------portfolio----------------*/
+ #portfolio{
+    padding: 50px 0;
+ }
+ .work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+ }
+ .work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+ }
+ .work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+ }
+ .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height  0.3s;
+ }
+ .layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+ }
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+     transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+/*------------contact--------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: solid;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+display: inline-block;
+}
+.btn.send{
+display: inline-block;
+background: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .send{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/*--------------mobile view-------------*/
+/*--------------mobile view (REPLACEMENT)-------------*/
+
+nav .fa-solid{
+    display: none;
+}
+/* ---------- Small laptops / large tablets (≤1200px) ---------- */
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 6%;
+    padding-right: 6%;
+    max-width: 1100px;
+  }
+
+  /* reduce header height a little so hero isn't huge on smaller laptops */
+  #header {
+    height: auto;
+    min-height: 60vh;
+    padding-top: 30px;
+    align-items: center;
+  }
+
+  /* logo a bit smaller */
+  .logo {
+    width: 120px;
+    transform: translateX(0);
+    margin-left: 0;
+  }
+
+  /* nav — tighten spacing but keep inline layout for laptop screens */
+  nav ul {
+    gap: 14px;
+    margin-top: 0;
+  }
+  nav ul li {
+    margin: 8px 12px;
+  }
+  nav ul li a {
+    font-size: 16px;
+    padding: 6px 4px;
+  }
+
+  /* About section — give more balanced column ratio */
+  .about-col-1 { flex-basis: 40%; max-width: 40%; }
+  .about-col-2 { flex-basis: 56%; max-width: 56%; }
+
+  /* scale the about image down so it doesn't dominate */
+  .about-col-1 img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  /* services/work spacing */
+  .services-list, .work-list {
+    grid-gap: 28px;
+  }
+
+  .services-list div {
+    padding: 32px;
+  }
+
+  .work img { transition: transform 0.45s; }
+  .work:hover img { transform: scale(1.05); }
+
+  /* headings scale a touch */
+  .sub-title { font-size: clamp(1.6rem, 3.2vw, 2.8rem); }
+  .header-text h1 { font-size: clamp(2.2rem, 4.5vw, 3.6rem); }
+
+  /* subtle button resize */
+  .btn { padding: 12px 36px; }
+}
+
+/* ---------- Tablets / small screens (≤992px) — stack/flow improved ---------- */
+@media (max-width: 992px) {
+  .container {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  /* header gets shorter on tablets */
+  #header { min-height: 50vh; padding-top: 26px; }
+
+  /* show hamburger at this size if you prefer - it's optional.
+     If you want the desktop menu to remain visible on tablets, remove display:block below */
+  .nav-toggle { display: none; } /* keep default hidden; set to block if you want hamburger here */
+
+  /* columns stack but remain balanced */
+  .about-col-1, .about-col-2 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .about-col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+  }
+
+  /* smaller about image on tablets */
+  .about-col-1 img {
+    max-width: 300px;
+    max-height: 55vh;
+    width: auto;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.55);
+  }
+
+  .about-col-2 {
+    padding: 8px 4px;
+  }
+
+  /* slightly larger tab links for touch */
+  .tab-links { margin-right: 28px; font-size: 17px; }
+
+  /* services grid becomes two columns when space permits */
+  .services-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 22px;
+  }
+
+  .work-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 22px;
+  }
+
+  /* adjust text scale for readability on tablets */
+  .header-text { font-size: 1rem; margin-top: 6%; }
+  .header-text h1 { font-size: clamp(1.8rem, 6vw, 2.8rem); }
+
+  /* increase touch target on nav links */
+  nav ul li a { padding: 10px 6px; display: inline-block; }
+
+  /* make buttons easier to tap */
+  .btn { padding: 12px 34px; font-size: 1rem; }
+
+  /* footer spacing */
+  .copyright { padding: 18px 0; font-size: 0.95rem; }
+}
+
+/* MOBILE / TABLET styles (≤768px) — updated for hamburger menu + image scaling */
+@media only screen and (max-width: 768px) {
+
+    /* show hamburger icon (three lines) */
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    /* header smaller on mobile */
+    #header{
+        height: 49vh;
+    }
+
+    .header-text {
+        margin-top: 40%;
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .header-text p{
+        text-align: left;
+        color: #ff0000;
+    }
+
+    .header-text h1 {
+        font-size: 36px;
+    }
+
+    /* NAV MENU - hidden off-canvas by default, slides in when .open is added */
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -260px;        /* hidden offscreen */
+        width: 260px;
+        height: 100vh;
+        padding-top: 60px;    /* leave space for close icon */
+        z-index: 999;
+        transition: right 0.35s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        overflow-y: auto;
+    }
+
+    /* when JavaScript toggles 'open' class, menu becomes visible */
+    nav ul.open {
+        right: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 18px;
+    }
+
+    /* place the close icon inside the menu (absolute) */
+    nav ul .fa-solid.nav-close{
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        font-size: 26px;
+        cursor: pointer;
+        color: #fff;
+        display: block;
+    }
+
+    /* hide any duplicate fa-solid inside nav except toggle & nav-close */
+    nav ul .fa-solid:not(.nav-close) {
+        display: none;
+    }
+
+    /* improve touch targets and font sizes */
+    nav ul li a{
+        font-size: 18px;
+        color: #fff;
+        padding: 8px 6px;
+        display: inline-block;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    /* About image: prevent overflow & overlapping on smaller screens */
+    .about-col-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-col-1 img{
+        width: auto;
+        max-width: 320px;       /* controls max size on tablets */
+        max-height: 60vh;       /* prevents super-tall images */
+        height: auto;
+        object-fit: cover;
+        border-radius: 18px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+        display: block;
+    }
+
+    /* small phones: reduce image size further */
+    @media (max-width: 480px) {
+        .about-col-1 img {
+            max-width: 220px;
+            max-height: 45vh;
+        }
+    }
+
+    .about-col-2{
+        /* make sure text column stacks well */
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px 6px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 15px;
+    }
+
+    /* ensure focus outline for accessibility when menu items focused */
+    nav ul li a:focus {
+        outline: 2px solid rgba(255,255,255,0.25);
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
+
+    /* optional: semi-transparent backdrop when menu open */
+    .menu-backdrop {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.45);
+        z-index: 900;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+    }
+    .menu-backdrop.show {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+
+
