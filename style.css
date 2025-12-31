@@ -423,6 +423,7 @@ nav .fa-solid{
 
   /* smaller about image on tablets */
   .about-col-1 img {
+    margin-top: 50px;
     max-width: 300px;
     max-height: 55vh;
     width: auto;
@@ -461,6 +462,11 @@ nav .fa-solid{
 
   /* footer spacing */
   .copyright { padding: 18px 0; font-size: 0.95rem; }
+  /* Hide hamburger when menu is open */
+nav.menu-opened .fa-bars {
+    display: none;
+}
+
 }
 
 /* MOBILE / TABLET styles (≤768px) — updated for hamburger menu + image scaling */
@@ -497,7 +503,7 @@ nav .fa-solid{
 
     /* NAV MENU - hidden off-canvas by default, slides in when .open is added */
     nav ul {
-        background: #ff004f;
+        background: #281f22;
         position: fixed;
         top: 0;
         right: -260px;        /* hidden offscreen */
@@ -614,6 +620,11 @@ nav .fa-solid{
         display: block;
         opacity: 1;
     }
+    /* Hide hamburger when menu is open */
+nav.menu-opened .fa-bars {
+    display: none;
+}
+
 }
 
 
