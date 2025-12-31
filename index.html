@@ -46,9 +46,10 @@
                     <p>As a BTech student in Computer Science and Engineering, I bring skills in HTML, JavaScript, Java and Android development in Java, with experience in web and application development. My journey began with a Diploma in Computer Engineering. Fluent in Hindi and proficient in English, I effectively represent my institute and excel in video editing, photo editing, and logo design. My volunteer efforts consistently yield positive outcomes.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -182,16 +183,21 @@ BTech in Computer Science and Engineering</li>
 
     <!-----------------------JavaScript------------------------>
     <script>
-        function opentab(tabname, event) {
-        let tablinks = document.getElementsByClassName("tab-links");
-        let tabcontents = document.getElementsByClassName("tab-contents");
+       function opentab(tabname, event) {
+    let tablinks = document.getElementsByClassName("tab-links");
+    let tabcontents = document.getElementsByClassName("tab-contents");
 
-        for (let tablink of tablinks) tablink.classList.remove("active-link");
-        for (let tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
     }
+
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
 
     // Mobile menu
     let sidemenu = document.getElementById("sidemenu");
