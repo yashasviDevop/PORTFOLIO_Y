@@ -1,270 +1,251 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yashasvi Patel</title>
+    <title>Yashasvi Patel | Premium Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/cbed27d40b.js" crossorigin="anonymous"></script>
-    
 </head>
+
 <body>
-    <div id="header">
-        <div class="container phn">
-            <nav>
-                <img src="images/yPB1.png" class="logo">
-                 <ul id="sidemenu">
-                <!-- CLOSE ICON -->
-                <i class="fa-solid fa-xmark nav-close" onclick="closemenu()"></i>
 
-                <li><a href="#header" onclick="closemenu()">Home</a></li>
-                <li><a href="#about" onclick="closemenu()">About</a></li>
-                <li><a href="#services" onclick="closemenu()">Services</a></li>
-                <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
-                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
-            </ul>
+    <!-- Custom Animated Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-glow"></div>
 
-                <i class="fa-solid fa-bars" id="menu-open" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Developer</p>
-                <h1>Hey Viewers, I'm<span><br>Patel Yashasvi.</span><br>Website Developer</h1>
-            </div>
-        </div>
+    <!-- Ambient Background Orbs -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
     </div>
 
-    <!-----------------About---------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>As a BTech student in Computer Science and Engineering, I bring skills in HTML, JavaScript, Java and Android development in Java, with experience in web and application development. My journey began with a Diploma in Computer Engineering. Fluent in Hindi and proficient in English, I effectively represent my institute and excel in video editing, photo editing, and logo design. My volunteer efforts consistently yield positive outcomes.</p>
+    <div class="wrapper">
+        <nav class="bento-nav">
+            <img src="images/ypIconNon-Bg.png" class="logo" alt="Logo">
+            <a href="images/WebDeveloper_YashasviPatel.pdf" class="btn magnetic" target="_blank">Download CV</a>
+        </nav>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
-                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+        <main class="bento-grid">
 
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming Languages</span><br> Java, JavaScript, C, C++, HTML</li>
-                            <li><span>Frameworks & Technologies</span><br>Android Development in Java (Beginner), ReactJs, ReactNative</li>
-                            <li><span>Web Technologies</span><br>HTML, CSS, JavaScript(Basic)</li>
-                            <li><span>Databases</span><br> MySQL, SQL,  Mongodb</li>
-                            <li><span>OS</span><br>Windows, Linux, Mac OS</li>
-                            <li><span>Tools & Platforms</span><br>GitHub, Canva Editor, MS Word, Excel, PowerPoint (Slide Presentation), Visual Studio  </li>
-                            <li><span>Other Skills</span><br> Prompt Engineering</li>
-                            <li><span>Languages</span><br> English, Hindi, Gujarati</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Book Store Website (WordPress) 2021-22</span><br> Developed a book store website using WordPress during the 2nd year of diploma. Gained fundamental skills in WordPress and learned the basics of
- website development.</li>
-                            <li><span> Brain Tumor Prediction Application (Java, Android Studio) 2022-23 </span><br>Contributed to the Android development of a Brain Tumor prediction application. Acquired valuable insights into Android development using Java in
- Android Studio.</li>
-                            <li><span> Secure Diary Web Application 2024-25</span><br> Designed and developed a secure web-based personal diary application that prioritizes user data privacy using cryptographic hashing techniques.Role:
- Prompt Developer . Tech Stack: HTML, CSS, JavaScript, Firebase / Node.js / Python (based on your backend), Crypto Libraries (SHA-256, bcrypt)</li>
-                            <li><span> Internship: Lightning Cognitions As a Jr. Web Developer 2025-Present</span><br> I believe that the experience I have gained while working with them will be an asset to my future career. Work[With HTML,C# and with Template
- Also</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span> 2020 - 2023</span><br>JAYVANTRAI HARRAI DESAI POLYTECHNIC <br>
- Diploma in Computer Enginnering <br>
- CGPA: 8.93</li>
-                            <li><span>2023 -  4th year~ currently studying</span><br> UKA TARSADIA UNIVERSITY <br> 
-BTech in Computer Science and Engineering</li>
-                           
-                        </ul>
+            <!-- Hero / Intro -->
+            <div class="bento-card col-span-2 row-span-2 highlight-card">
+                <div class="card-content">
+                    <p class="tagline">Developer & Designer</p>
+                    <h1 class="huge-title">Yashasvi<br>Patel.</h1>
+                    <p class="desc">Computer Science Engineering graduate experienced in full-stack web development, modern frontend technologies, and AI-assisted development. Delivering real-world web solutions with a growth mindset.</p>
+                    <div class="socials">
+                        <a href="https://github.com/yashasvidevop/" class="magnetic"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/yashasvi-patel08" class="magnetic"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:yashasviwpatel08@gmail.com" class="magnetic"><i
+                                class="fa-solid fa-paper-plane"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-------------------Services-------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>WEBDESIGNING PROJECTS</p>
-                    <a href="images/PC-project.pdf">Learn more1</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Application Design</h2>
-                    <p>Application using Android Studio / Flutter</p>
-                    <a href="images/APPLICATION.pdf">Learn more2</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Canva Design</h2>
-                    <p>Canva Designing-Logo,EbookCover,Banner,Poster..</p>
-                    <a href="images/CANVA-DESIGN.pdf">Learn more3</a>
+            <!-- Profile Image -->
+            <div class="bento-card image-card col-span-1 row-span-2">
+                <img src="images/user.jpg" alt="Yashasvi Patel" class="profile-img">
+            </div>
+
+            <!-- About / Education -->
+            <div class="bento-card col-span-1 row-span-1">
+                <div class="card-content">
+                    <h3>Education</h3>
+                    <ul class="clean-list">
+                        <li>
+                            <strong>BTech in Computer Science and Engineering</strong>
+                            <span>UKA TARSADIA UNIVERSITY | 2023 - 2026</span>
+                        </li>
+                        <li>
+                            <strong>Diploma in Computer Engineering (CGPA: 8.93)</strong>
+                            <span>JAYVANTRAI HARRAI DESAI POLYTECHNIC | 2020 - 2023</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!----------------portfolio--------------------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/aoc.png">
-                    <div class="layer">
-                        <h3>Convertor</h3>
-                        <p>All In One Convertor</p>
-                        <a href="https://yashasvidevop.github.io/convertor_aoc/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/kyh.jpg">
-                    <div class="layer">
-                        <h3>Know Your Health</h3>
-                        <p>Vata-Pitta-Kapha</p>
-                        <a href="https://yashasvidevop.github.io/know-your-health/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/resume.png">
-                    <div class="layer">
-                        <h3>Resume Builder</h3>
-                        <p>Global ATS Continent Resume Builder</p>
-                        <a href="https://resume-builder-ten-ochre.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <!-- Skills -->
+            <div class="bento-card col-span-2 row-span-1">
+                <div class="card-content">
+                    <h3>Core Stack</h3>
+                    <div class="tags">
+                        <span class="tag">Java/C++/PHP</span>
+                        <span class="tag">HTML/CSS/JS</span>
+                        <span class="tag">ReactJS</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MySQL/MongoDB</span>
+                        <span class="tag">Git/GitHub</span>
+                        <span class="tag">Figma/Canva</span>
+                        <span class="tag">Prompt Engineering</span>
+                        <span class="tag">AI-Assisted Dev</span>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </div>
 
-    <!-------------------Contact------------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> yashasviwpatel08@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +91 XXXXX-XXXXX</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/yashasvi-patel08"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/yashasvidevop/"><i class="fa-brands fa-github"></i></a>
+            <!-- Services -->
+            <div class="bento-card col-span-3 row-span-1 services-card">
+                <div class="card-content">
+                    <div class="services-wrapper">
+                        <div class="service magnetic">
+                            <i class="fa-solid fa-code"></i>
+                            <h4>Web Design</h4>
+                        </div>
+                        <div class="service magnetic">
+                            <i class="fa-brands fa-android"></i>
+                            <h4>App Design</h4>
+                        </div>
+                        <div class="service magnetic">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <h4>UI/UX & Canva</h4>
+                        </div>
                     </div>
-                    <a href="images/BtechCSE_PatelYashasvi.pdf" class="btn btn2">Get To know My CV</a>
                 </div>
-                <div class="contact-right">
+            </div>
+
+            <!-- Portfolio Projects -->
+            <div class="bento-card col-span-2 row-span-2">
+                <div class="card-content">
+                    <h3>Featured Works</h3>
+                    <div class="projects-list">
+                        <a href="https://yashasvidevop.github.io/convertor_aoc/" class="project-item magnetic"
+                            target="_blank">
+                            <img src="images/aoc.png" alt="Convertor">
+                            <div class="p-info">
+                                <h4>All In One Convertor</h4>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="https://yashasvidevop.github.io/know-your-health/" class="project-item magnetic"
+                            target="_blank">
+                            <img src="images/kyh.jpg" alt="Know Your Health">
+                            <div class="p-info">
+                                <h4>Know Your Health</h4>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="https://resume-builder-ten-ochre.vercel.app/" class="project-item magnetic"
+                            target="_blank">
+                            <img src="images/resume.png" alt="Resume Builder">
+                            <div class="p-info">
+                                <h4>Global ATS Resume</h4>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a href="https://yashasvidevop.github.io/vaishali_beauty_parlour/" class="project-item magnetic"
+                            target="_blank">
+                            <img src="images/beauty.jpg" alt="Vaishali Beauty Parlour">
+                            <div class="p-info">
+                                <h4>Vaishali Beauty Parlour</h4>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bento-card col-span-1 row-span-2 form-card">
+                <div class="card-content">
+                    <h3>Let's Talk</h3>
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn send">Send</button>
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="3" placeholder="Message"></textarea>
+                        <button type="submit" class="btn magnetic w-full">Send Message</button>
                     </form>
-                    <span id="msg" style="display: none; color: green; font-weight: bold;">Message sent successfully!</span>
+                    <span id="msg" style="display: none; color: #10b981; font-size: 14px; margin-top: 10px;">Sent
+                        successfully!</span>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 Patel Yashasvi. All rights reserved.</p>
-        </div>
+
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Patel Yashasvi. Built with intent.</p>
+        </footer>
     </div>
 
-    <!-----------------------JavaScript------------------------>
     <script>
-       function opentab(tabname, event) {
-    let tablinks = document.getElementsByClassName("tab-links");
-    let tabcontents = document.getElementsByClassName("tab-contents");
+        // Custom Cursor & Magnetic Effect
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorGlow = document.querySelector('.cursor-glow');
+        const magnetics = document.querySelectorAll('.magnetic');
+        const cards = document.querySelectorAll('.bento-card');
 
-    for (let tablink of tablinks) {
-        tablink.classList.remove("active-link");
-    }
+        let mouseX = 0;
+        let mouseY = 0;
 
-    for (let tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-    }
+        window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
 
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
+            // Move cursor elements
+            cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+            cursorGlow.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
 
-    // Mobile menu
-    let sidemenu = document.getElementById("sidemenu");
+            // Flashlight effect on cards (illuminating borders)
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
 
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
+        // Magnetic effect logic
+        magnetics.forEach((el) => {
+            el.addEventListener('mousemove', (e) => {
+                const pos = el.getBoundingClientRect();
+                const mx = e.clientX - pos.left - pos.width / 2;
+                const my = e.clientY - pos.top - pos.height / 2;
 
-    function closemenu() {
-        sidemenu.style.right = "-260px";
-    }
+                el.style.transform = `translate(${mx * 0.3}px, ${my * 0.3}px) scale(1.05)`;
+                cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1.5)`;
+            });
 
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'translate(0px, 0px) scale(1)';
+                cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) scale(1)`;
+            });
+        });
+
+        // Google Sheet Form Submission
         const scriptURL = 'https://script.google.com/macros/s/AKfycbw8BstZKPrBG0G_N5FXK0wHO2GILMnjToyrlvvJId8sb2Zy-zaxyRYb5THp3Wuaw--i/exec';
         const form = document.forms['submit-to-google-sheet'];
         const msg = document.getElementById("msg");
 
         form.addEventListener('submit', e => {
             e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Sending...';
+
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                    msg.style.display = "inline";
-                    msg.innerHTML = "Message sent successfully!";
-                    msg.style.color = "green";
+                    msg.style.display = "block";
+                    btn.innerHTML = originalText;
+                    form.reset();
                     setTimeout(() => {
                         msg.style.display = "none";
                     }, 3000);
-                    form.reset();
                 })
                 .catch(error => {
-                    msg.style.display = "inline";
-                    msg.style.color = "red";
-                    msg.innerHTML = "Message failed to send!";
                     console.error('Error!', error.message);
+                    btn.innerHTML = originalText;
                 });
         });
     </script>
-
-	<script> var theme = document.getElementById("#btn");
-	let currentmode = "dark";
-		theme.addEventListener("click" , () => {
-		if(currentmode === "dark")
-		{
-			currentmode = "light";
-			document.querySelector("body").style.backgroundColor ="white";
-		} else
-		{
-			document.querySelector("body").style.backgroundColor ="white";
-		}
-		console.log(currentmode);
-		});
-	</script>
-
-    <script>
-    sidemenu = document.getElementById("sidemenu");
-    const nav = document.querySelector("nav");
-
-    function openmenu() {
-        sidemenu.style.right = "0";
-        nav.classList.add("menu-opened"); // hide ☰
-    }
-
-    function closemenu() {
-        sidemenu.style.right = "-260px";
-        nav.classList.remove("menu-opened"); // show ☰ again
-    }
-</script>
-
-
 </body>
+
 </html>
